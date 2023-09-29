@@ -1,14 +1,14 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -16,37 +16,78 @@ code {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Navbar {
+  background: white;
+  box-shadow: 1px 0 10px 1px #fafafa;
+  height: 100vh;
+  position: fixed;
+  z-index: 3;
+  padding: 2rem 0.8rem;
+}
+button.btn {
+  border: 0.1px solid #fdfdfd;
+  border-radius: 10px !important;
+  color: #777;
+  font-size: 14px !important;
+}
+button.btn:first-of-type {
+  font-size: 12.5px !important;
+  margin-bottom: 3rem;
+}
+.Navbar > div button.btn {
+  display: block;
+  margin-bottom: 0.8rem;
+}
+.user {
+  background-color: #1023ef;
+  border-radius: 10rem !important;
+  border: 1px solid #fdfdfd;
+  color: #eee;
+  font-size: 12px !important;
+  margin-top: 20vh;
+  padding: 5px 2px 7px;
+  text-transform: uppercase;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+/* HEADER */
+header {
   align-items: center;
+  background: white;
+  box-shadow: 0 0 10px 1px #fafafa;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 5vh;
+  padding: 0 5rem;
+  position: fixed;
+  width: 100vw;
+  z-index: 2;
 }
-
-.App-link {
-  color: #61dafb;
+header > div.header {
+  border-right: 1.5px solid #ddd;
+  font-family: sans-serif;
+  font-family: cursive;
+  font-weight: 600;
+  font-size: 11.5px;
+  letter-spacing: -0.2px;
+  line-break: strict;
+  /* margin: 1.2re0m 0; */
+  padding: 0.56rem 3rem;
+  text-transform: capitalize;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header > div.active {
+  background-color: #016960;
+  color: #fafafa;
+  padding: 1.5rem 3rem 1.35rem;
+  position: relative;
+}
+header > div.active::after {
+  background-color: #016960;
+  border: 10px solid white;
+  border-left-color: transparent;
+  content: "";
+  height: 1.2rem;
+  position: absolute;
+  top: 40%;
+  right: -1.2rem;
+  width: 1.2rem;
 }

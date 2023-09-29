@@ -1,16 +1,27 @@
-import { MenuOutlined, HomeOutlined, HddOutlined, ContainerOutlined } from "@ant-design/icons";
+import {
+  MenuOutlined,
+  HomeOutlined,
+  HddOutlined,
+} from "@ant-design/icons";
 import React from "react";
+import { Button } from "antd";
 
 const Navbar = () => {
   return (
     <div className="Navbar">
       {/*  MENU */}
-      <MenuOutlined />
+      <Button size="small" className="btn">
+        <MenuOutlined />
+      </Button>
       <div>
         {/*  HOME */}
+      <Button size="small" className="btn">
         <HomeOutlined />
+      </Button>
         {/*  LIST */}
-        <HddOutlined/>
+      <Button size="small" className="btn">
+        <HddOutlined />
+      </Button>
       </div>
       {/*  USER */}
       <div className="user">nt</div>

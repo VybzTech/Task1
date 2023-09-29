@@ -11,7 +11,12 @@ const Header = () => {
   return (
     <header>
       {Headers?.map((head) => (
-        <div className={`header ${active&&head?'active':''}`}>{head}</div>
+        <div
+          className={`header ${active ===head ? "active" : ""}`}
+          onClick={()=>set((a) => (a = head))}
+        >
+          {head}
+        </div>
       ))}
     </header>
   );
