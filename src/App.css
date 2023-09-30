@@ -70,8 +70,13 @@ header > div.header {
   font-size: 11.5px;
   letter-spacing: -0.2px;
   line-break: strict;
+  min-width: max-content;
   padding: 0.56rem 3rem;
   text-transform: capitalize;
+}
+header > div.header:hover,
+header > div.header:focus {
+  cursor: pointer;
 }
 header > div.active {
   background-color: #016960;
@@ -94,14 +99,14 @@ header > div.active::after {
 /* MAIN */
 main {
   background: #fafafa;
-  padding: 25vh 15vh 10vh;
+  padding: 25vh 18vh 20vh;
 }
 .Container {
   background: white;
   border-radius: 12px;
   box-shadow: 0 0 10px 1px #fafafa;
   margin: 0 0 1.85rem 0;
-  max-width: 60vw;
+  max-width: 45vw;
 }
 .Container .top {
   background-color: #6fe4f45a;

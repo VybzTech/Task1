@@ -10,6 +10,7 @@ const Input = (props: InputProps) => {
       <div>
         <label htmlFor={props.name}>{props.label}</label>
         <input
+          className="big"
           type="text"
           placeholder={props.placeholder}
           name={props.name}
