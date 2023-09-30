@@ -1,14 +1,13 @@
 import React from "react";
 import "./App.css";
-import Header from "./Components/Header";
-import Navbar from "./Components/Navbar";
-import Upload from "./Components/Upload";
+import Header from "./Components/Main/Header";
+import Navbar from "./Components/Main/Navbar";
+import Upload from "./Components/Main/Upload";
 import Container from "./Components/Container";
-import InfoForm from "./Components/InfoForm";
 import "antd/dist/reset.css";
-import Profile from "./Components/Profile";
-import AddedInfo from "./Components/AddedInfo";
-import Personal from "./Components/Personal";
+import Profile from "./Components/Main/Profile";
+import AddedInfo from "./Components/Main/AddedInfo";
+import Personal from "./Components/Main/Personal";
 
 function App() {
   return (
@@ -20,7 +19,6 @@ function App() {
         <Container heading="Personal Information" body={<Personal />} />
         <Container heading="Profile" body={<Profile />} />
         <Container heading="Additional questions" body={<AddedInfo />} />
-        {/* <Container heading="Additional questions" body={<InfoForm />} /> */}
       </main>
     </div>
   );

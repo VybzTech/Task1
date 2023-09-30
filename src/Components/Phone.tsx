@@ -1,7 +1,7 @@
 import React from "react";
-
-const Phone = () => {
-  return <input type="number" placeholder="(without dial code)" />;
+type phoneProps = { placeholder: string };
+const Phone = (props: phoneProps) => {
+  return <input type="number" placeholder={props.placeholder} />;
 };
 
 export default Phone;
