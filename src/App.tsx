@@ -8,7 +8,7 @@ import InfoForm from "./Components/InfoForm";
 import CompoundedSpace from "antd/es/space";
 //   import { blue } from '@ant-design/colors';
 // import "antd/dist/antd.css";
-import "antd/dist/reset.css"
+import "antd/dist/reset.css";
 import { Space, Button } from "antd";
 
 function App() {
@@ -16,15 +16,17 @@ function App() {
     <div className="App">
       <Navbar />
       <Header />
-      <Space
-      //align , direction, size, split, wrap
-      >
-        <Container heading="Upload cover image" body={<Upload />} />
-      </Space>
-      <Container heading="Personal Information" body={<InfoForm />} />
-      <Container heading="Profile" body={<InfoForm />} />
-      <Container heading="Additional questions" body={<InfoForm />} />
-      <Container heading="Additional questions" body={<InfoForm />} />
+      <main>
+        <Space
+        //align , direction, size, split, wrap
+        >
+          <Container heading="Upload cover image" body={<Upload />} />
+        </Space>
+        <Container heading="Personal Information" body={<InfoForm />} />
+        <Container heading="Profile" body={<InfoForm />} />
+        <Container heading="Additional questions" body={<InfoForm />} />
+        <Container heading="Additional questions" body={<InfoForm />} />
+      </main>
     </div>
   );
 }

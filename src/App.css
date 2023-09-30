@@ -91,3 +91,8 @@ header > div.active::after {
   right: -1.2rem;
   width: 1.2rem;
 }
+
+/* MAIN */
+main {
+  padding-top: 20vh;
+}
