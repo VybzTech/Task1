@@ -1,10 +1,9 @@
-import React from "react";
 type ContainerProps = { heading: string; body: JSX.Element };
 const Container = (props: ContainerProps) => {
   return (
-    <div>
+    <div className="Container">
       <div className="top">{props.heading}</div>
-      <>{props.body}</>
+      <div className="content">{props.body}</div>
     </div>
   );
 };
